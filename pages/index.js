@@ -60,7 +60,7 @@ function Home({ users }) {
 export default Home
 
 export async function getStaticProps() {
-    const products = await client.fetch(`*[_type == "notes"]`);
+    const products = await client.fetch(`*[_type == "notes"] | order(_createdAt desc)`);
     console.log('products', products);
 
     return {
