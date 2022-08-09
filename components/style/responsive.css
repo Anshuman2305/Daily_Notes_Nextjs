@@ -1,0 +1,24 @@
+@media only screen and (max-width: 768px) {
+
+    .box1 {
+        max-width:90vw;
+        border-color: #BCBCBC;
+        background-color: #E4E4E4;
+    }
+
+    .box1 p{
+        font-size: 1.4em !important;
+    }
+
+
+    .box2 {
+        height: 550px;
+        width: 350px;
+        border-color: #9B9B9B;
+        background-color: #fff;
+    }
+
+    .footer p{
+        font-size: 1.3em;
+    }
+}

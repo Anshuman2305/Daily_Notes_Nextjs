@@ -1,0 +1,29 @@
+.lists{
+    background-color: #E1E1E1;
+    height: 4.5em;
+    border-style:solid;
+    border-width: 3px;
+    border-color: rgb(196, 196, 196);
+}
+
+.subject{
+    background-color: #696969;
+    color: #E1E1E1;
+}
+
+.date{
+    background-color: #bebebe;
+    color: #5e5e5e;
+}
+
+.download{
+    border: 3px solid #adadad;
+    color: #898989;
+    font-size: 1.5em;
+}
+
+.download:hover{
+    background-color: #585858;
+    color: white;
+    border-color: #585858;
+}
