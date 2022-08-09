@@ -1,4 +1,5 @@
 import React from 'react'
+import ThemeToggler from './ThemeToggler'
 
 function Header() {
   return (
@@ -11,14 +12,11 @@ function Header() {
                 </div>
             </div>
             
-            <div className="flex items-center">
-                <div className="items-center space-x-4">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://anshuman2305.github.io/Daily-Notes/" target="_blank" rel="noopener noreferrer" id="share" className="pointer p-5 share rounded-full ri-facebook-fill ease-in-out duration-500"></a>
-                    <a href="https://api.whatsapp.com/send?text=पेश है आपके आज के माइनिंग नोट्स - https://anshuman2305.github.io/Daily-Notes/" target="_blank" rel="noopener noreferrer" id="share" className="pointer p-5 share rounded-full ri-whatsapp-line ease-in-out duration-500"></a>
-                    <a href="mailto:?subject=पेश है आपके आज के माइनिंग नोट्स&amp;body=Check out this site https://anshuman2305.github.io/Daily-Notes/." target="_blank" rel="noopener noreferrer" id="share" className="pointer p-5 share rounded-full ri-mail-line ease-in-out duration-500"></a>
-                    <button  id="darkmode" className="pointer w-16 h-16 darkmode rounded-full ri-moon-fill"></button>
-                </div>
-            </div>
+            
+                    <ThemeToggler />
+
+                
+            
         </div>
     </div>
   )
