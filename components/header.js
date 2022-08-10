@@ -8,7 +8,7 @@ function Header() {
             <div className="flex items-center">
                 <div className="logo flex-col text-center leading-[3.5em]">
                     <h1 className="text-[6em] font-extrabold dark:text-[#ccc] text-[#535353]">am</h1>
-                    <p id="logo" className="text-[1.6em] dark:text-[#ccc] text-[#535353]">Daily Notes</p>    
+                    <p id="logo" className="text-[1.5em] dark:text-[#ccc] text-[#535353] ">NOTEBOOK</p>    
                 </div>
             </div>
             
