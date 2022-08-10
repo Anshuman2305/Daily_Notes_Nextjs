@@ -13,6 +13,6 @@
 .box2 {
     height: 550px;
     width: 500px;
-    border-color: #9B9B9B;
-    background-color: #fff;
+    border-color: rgb(255, 255, 255);
+    background-color: rgb(243, 243, 243);
 }

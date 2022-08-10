@@ -17,13 +17,13 @@
 }
 
 .download{
-    border: 3px solid #adadad;
+    border: 3px solid #898989;
     color: #898989;
     font-size: 1.5em;
 }
 
 .download:hover{
-    background-color: #585858;
+    background-color: #898989;
     color: white;
-    border-color: #585858;
+    border-color: #898989;
 }
