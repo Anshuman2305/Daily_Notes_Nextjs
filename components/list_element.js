@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
+import { useState } from 'react';
 
 
 function List_element({ obj }) {
@@ -15,14 +16,33 @@ function format(date) {
   return day + '-' + month + '-' + year;
 }
 
-console.log(format(date));
+//changing color
+const sub = obj.subject
+const box = useRef();
+
+var tag_color = new Map([["Mine Survey","#AB7894"], ["Mine Economics","#6F77BC"], ["Mine Closure...","#759575"], ["Urban Hydrology","#6AA6B9"], ["Survey Practical","#9C8671"]]);
+
+
+useEffect(()=>{
+
+    for(var i=0; i<tag_color.size; i++)
+    {
+        if(tag_color.has(sub))
+        {
+            box.current.style.backgroundColor = tag_color.get(sub);
+            break;
+        }
+        
+    }
+});
+
 
     return (
         <div>
 
             <div id="lists" className="flex flex-1 justify-between lists w-full rounded-full items-center p-3 dark:bg-[#202020] dark:border-[#202020] ease-in-out duration-200">
                 <div className="flex items-center space-x-2">
-                    <div id="sub" className="flex h-2 p-4 text-xs lg:text-sm lg:h-4 lg:p-4 subject items-center rounded-full dark:bg-[#505050]">
+                    <div id="sub" ref={box} className="flex h-2 p-4 text-xs lg:text-sm lg:h-4 lg:p-4 subject items-center rounded-full dark:bg-[#505050]">
                         <p>{obj.subject}</p>
                     </div>
                     <div className="flex h-2 p-4 text-xs lg:text-sm lg:h-4 lg:p-4 date items-center rounded-full">
