@@ -12,18 +12,18 @@ const ThemeToggler = () => {
         <div className="">
             <div className="">
                 <div className="grid grid-cols-4 gap-4">
-                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://anshuman2305.github.io/Daily-Notes/" target="_blank" rel="noopener noreferrer" id="share" className="pointer w-14 h-14 flex items-center justify-center share rounded-full ri-facebook-fill ease-in-out duration-500 col-span-1"></a>
-                    <a href="https://api.whatsapp.com/send?text=पेश है आपके आज के माइनिंग नोट्स - https://anshuman2305.github.io/Daily-Notes/" target="_blank" rel="noopener noreferrer" id="share" className="pointer w-14 h-14 flex items-center justify-center share rounded-full ri-whatsapp-line ease-in-out duration-500 col-span-1"></a>
-                    <a href="mailto:?subject=पेश है आपके आज के माइनिंग नोट्स&amp;body=Check out this site https://anshuman2305.github.io/Daily-Notes/." target="_blank" rel="noopener noreferrer" id="share" className="pointer w-14 h-14 flex items-center justify-center share rounded-full ri-mail-line ease-in-out duration-500 col-span-1"></a>
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=https://anshuman2305.github.io/Daily-Notes/" target="_blank" rel="noopener noreferrer" id="share" className="pointer w-14 h-14 dark:text-[#242424] flex items-center justify-center share rounded-full ri-facebook-fill ease-in-out duration-500 col-span-1"></a>
+                    <a href="https://api.whatsapp.com/send?text=पेश है आपके आज के माइनिंग नोट्स - https://anshuman2305.github.io/Daily-Notes/" target="_blank" rel="noopener noreferrer" id="share" className="pointer w-14 h-14 dark:text-[#242424] flex items-center justify-center share rounded-full ri-whatsapp-line ease-in-out duration-500 col-span-1"></a>
+                    <a href="mailto:?subject=पेश है आपके आज के माइनिंग नोट्स&amp;body=Check out this site https://anshuman2305.github.io/Daily-Notes/." target="_blank" rel="noopener noreferrer" id="share" className="pointer w-14 h-14 dark:text-[#242424] flex items-center justify-center share rounded-full ri-mail-line ease-in-out duration-500 col-span-1"></a>
                     <button
                         className="pointer w-14 h-14 bg-[#cccccc] dark:bg-[#242424] rounded-full flex items-center justify-center focus:outline-none col-span-1"
                         onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
                         aria-label="Toggle Dark Mode"
                     >
                         {theme === 'light' ? (
-                            <MoonIcon className="text-[#242424] bg-[#cccccc] p-5 rounded-full" />
+                            <MoonIcon className="bg-[#242424] text-[#cccccc] p-5 rounded-full" />
                         ) : (
-                            <SunIcon className="text-[#cccccc] p-5" />
+                            <SunIcon className="bg-[#cccccc] text-[#242424] p-5 rounded-full" />
                         )}
                     </button>
                 </div>
