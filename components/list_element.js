@@ -49,7 +49,7 @@ useEffect(()=>{
                     </div>
                 </div>
                 <div>
-                    <a href={obj.download} id="download" className="pointer download p-3 rounded-full ri-download-cloud-line ease-in-out duration-200"></a>
+                    <a href={obj.download} id="download" target="_blank" rel="noopener noreferrer" className="pointer download p-3 rounded-full ri-download-cloud-line ease-in-out duration-200"></a>
                 </div>
             </div>
 
