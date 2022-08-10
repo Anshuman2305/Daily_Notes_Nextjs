@@ -20,7 +20,7 @@ console.log(format(date));
     return (
         <div>
 
-            <div id="lists" className="flex flex-1 justify-between lists w-full rounded-full items-center p-3 dark:bg-[#202020] dark:border-[#202020]">
+            <div id="lists" className="flex flex-1 justify-between lists w-full rounded-full items-center p-3 dark:bg-[#202020] dark:border-[#202020] ease-in-out duration-200">
                 <div className="flex items-center space-x-2">
                     <div id="sub" className="flex h-2 p-4 text-xs lg:text-sm lg:h-4 lg:p-4 subject items-center rounded-full dark:bg-[#505050]">
                         <p>{obj.subject}</p>
@@ -35,7 +35,7 @@ console.log(format(date));
             </div>
 
             <div className="flex justify-end items-center p-1 mr-4 text-[12px] text-[#9e9e9e]">
-                <p className=" font-bold">Uploaded on : {format(obj._createdAt)}</p>
+                <p className=" font-bold">Last Updated : {format(obj._createdAt)}</p>
             </div>
 
         </div>
