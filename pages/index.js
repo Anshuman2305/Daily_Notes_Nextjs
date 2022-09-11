@@ -29,7 +29,7 @@ function Home({ users }) {
                                         <p id="txt_part" className="mb-4 text-[#7a7a7a] dark:text-[#7a7a7a] text-[1.5em]">for Classmates,</p>
                                     </div>
                                     <div>
-                                        <p id="txt" className="mb-4 text-[2em] text-[#444444] dark:text-[#ccc]">Kindly refer to my daily notes so that your_marks {"<="} my_marks.</p>
+                                        <p id="txt" className="mb-4 text-[1.7em] text-[#444444] dark:text-[#ccc]">Kindly refer to my daily notes so that your_marks {"<="} my_marks.</p>
                                     </div>
                                     <div>
                                         <p id="txt_part" className="text-[#7a7a7a] dark:text-[#7a7a7a] text-[1.5em]">Thank you, <br />Yours Competitor</p>
